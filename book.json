@@ -1,0 +1,20 @@
+{
+	"title": "Database System",
+	"author": "comsciubu",
+	"language": "th",
+	"gitbook": ">=3.0.0",
+	"plugins": [
+		"favicon"
+	],
+	"pluginsConfig": {
+		"favicon": {
+			"shortcut": "assets/images/fav.ico",
+			"bookmark": "assets/images/fav.ico",
+			"appleTouch": "assets/images/apple-touch-icon.png",
+			"appleTouchMore": {
+				"120x120": "assets/images/apple-touch-icon-120x120.png",
+				"180x180": "assets/images/apple-touch-icon-180x180.png"
+			}
+		}
+	}
+}
