@@ -1,4 +1,4 @@
-# Database System
+# ![CSUBU](/assets/icons/csubu-bw-logo.png) Database System <i class="fa fa-database"></i>
 
 **รหัสวิชา** 1144 233
 
@@ -8,7 +8,7 @@
 
 **รายวิชาที่ต้องเรียนควบคู่กัน**  : ไม่มี
 
-## อาจารย์ประจำรายวิชา
+## <i class='fa fa-user'></i> อาจารย์ประจำรายวิชา
 
 **ผู้จัดการรายวิชา** ผศ.ชยาพร แก่นสาร์
 
@@ -29,6 +29,11 @@ Concept of data management;  file management;  database management;  database mo
 ## เอกสารประกอบ
 
 * https://comsciubu.github.io/database
+
+* ![Text Book 1](https://images-na.ssl-images-amazon.com/images/I/51wjM0Olu4L._SX396_BO1,204,203,200_.jpg)
+
+* ![Instant MongoDB](https://d255esdrn735hr.cloudfront.net/sites/default/files/9703OS_cov_0.jpg)
+
 
 ## Github Repository
 

@@ -29,7 +29,7 @@
 
   - mongo-express - https://github.com/mongo-express/mongo-express
 
-## การติดตั้ง
+## การติดตั้ง ![MongoDB](/assets/images/mongodb-logo.png)
 
 ### ติดตั้งด้วยวิธีปกติของระบบปฏิบัติการ
 
