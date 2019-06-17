@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>MongoDB 01 · Database System</title>
+        <title>ความรู้เบื้องต้น NoSQL · Database System</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -151,7 +151,7 @@
                 <a href="../week03/">
             
                     
-                    หัวข้อสัปดาห์ที่ 3
+                    หัวข้อสัปดาห์ที่ ...
             
                 </a>
             
@@ -164,7 +164,7 @@
                 <a href="./">
             
                     
-                    MongoDB 01
+                    ความรู้เบื้องต้น NoSQL
             
                 </a>
             
@@ -177,7 +177,7 @@
                 <a href="../mongo02/">
             
                     
-                    MongoDB 02
+                    โครงสร้างข้อมูลและการจัดการ
             
                 </a>
             
@@ -190,7 +190,7 @@
                 <a href="../mongo03/">
             
                     
-                    MongoDB 03
+                    การจัดการข้อมูลขั้นสูง
             
                 </a>
             
@@ -203,7 +203,7 @@
                 <a href="../mongo04/">
             
                     
-                    MongoDB 04
+                    การพัฒนาซอฟต์แวร์โดยใช้ NoSQL
             
                 </a>
             
@@ -241,7 +241,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >MongoDB 01</a>
+        <a href=".." >ความรู้เบื้องต้น NoSQL</a>
     </h1>
 </div>
 
@@ -256,7 +256,103 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="mongodb-01">MongoDB 01</h1>
+                                <h1 id="&#xE04;&#xE27;&#xE32;&#xE21;&#xE23;&#xE39;&#xE49;&#xE40;&#xE1A;&#xE37;&#xE49;&#xE2D;&#xE07;&#xE15;&#xE49;&#xE19;&#xE40;&#xE01;&#xE35;&#xE48;&#xE22;&#xE27;-nosql">&#xE04;&#xE27;&#xE32;&#xE21;&#xE23;&#xE39;&#xE49;&#xE40;&#xE1A;&#xE37;&#xE49;&#xE2D;&#xE07;&#xE15;&#xE49;&#xE19;&#xE40;&#xE01;&#xE35;&#xE48;&#xE22;&#xE27; NoSQL</h1>
+<blockquote>
+<p>NoSQL Introduction</p>
+</blockquote>
+<h2 id="&#xE08;&#xE38;&#xE14;&#xE1B;&#xE23;&#xE30;&#xE2A;&#xE07;&#xE04;&#xE4C;&#xE23;&#xE32;&#xE22;&#xE2A;&#xE31;&#xE1B;&#xE14;&#xE32;&#xE2B;&#xE4C;">&#xE08;&#xE38;&#xE14;&#xE1B;&#xE23;&#xE30;&#xE2A;&#xE07;&#xE04;&#xE4C;&#xE23;&#xE32;&#xE22;&#xE2A;&#xE31;&#xE1B;&#xE14;&#xE32;&#xE2B;&#xE4C;</h2>
+<ol>
+<li><p>&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE2D;&#xE18;&#xE34;&#xE1A;&#xE32;&#xE22;&#xE23;&#xE30;&#xE1A;&#xE1A;&#xE10;&#xE32;&#xE19;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;&#xE41;&#xE1A;&#xE1A; NoSQL &#xE44;&#xE14;&#xE49;</p>
+</li>
+<li><p>&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07;&#xE23;&#xE30;&#xE1A;&#xE1A;&#xE10;&#xE32;&#xE19;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25; mongodb &#xE44;&#xE14;&#xE49;</p>
+</li>
+<li><p>&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE2D;&#xE18;&#xE34;&#xE1A;&#xE32;&#xE22;&#xE41;&#xE25;&#xE30;&#xE22;&#xE01;&#xE15;&#xE31;&#xE27;&#xE2D;&#xE22;&#xE48;&#xE32;&#xE07; database collection &#xE41;&#xE25;&#xE30; document &#xE44;&#xE14;&#xE49;</p>
+</li>
+<li><p>&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; database collection &#xE41;&#xE25;&#xE30; document &#xE15;&#xE32;&#xE21;&#xE17;&#xE35;&#xE48;&#xE42;&#xE08;&#xE17;&#xE22;&#xE4C;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE44;&#xE14;&#xE49; (mongo-express / mongo-compass)</p>
+</li>
+</ol>
+<p><strong>&#xE2D;&#xE49;&#xE32;&#xE07;&#xE2D;&#xE34;&#xE07;</strong></p>
+<ul>
+<li><p>&#xE2A;&#xE33;&#xE2B;&#xE23;&#xE31;&#xE1A;&#xE08;&#xE38;&#xE14;&#xE1B;&#xE23;&#xE30;&#xE2A;&#xE07;&#xE04;&#xE4C;&#xE17;&#xE35;&#xE48; 1 </p>
+<ul>
+<li><p><a href="https://www.slideshare.net/badraccount/nosql-databases-70526495" target="_blank">https://www.slideshare.net/badraccount/nosql-databases-70526495</a></p>
+</li>
+<li><p><a href="https://www.slideshare.net/quipo/nosql-databases-why-what-and-when" target="_blank">https://www.slideshare.net/quipo/nosql-databases-why-what-and-when</a></p>
+</li>
+</ul>
+</li>
+<li><p>&#xE2A;&#xE33;&#xE2B;&#xE23;&#xE31;&#xE1A;&#xE08;&#xE38;&#xE14;&#xE1B;&#xE23;&#xE30;&#xE2A;&#xE07;&#xE04;&#xE4C;&#xE17;&#xE35;&#xE48; 2-4 </p>
+<ul>
+<li><p><a href="https://www.slideshare.net/wlaforest/an-introduction-to-big-data-nosql-and-mongodb" target="_blank">https://www.slideshare.net/wlaforest/an-introduction-to-big-data-nosql-and-mongodb</a></p>
+</li>
+<li><p>mongo-compass - <a href="https://docs.mongodb.com/compass/current/install/" target="_blank">https://docs.mongodb.com/compass/current/install/</a></p>
+</li>
+<li><p>mongo-express - <a href="https://github.com/mongo-express/mongo-express" target="_blank">https://github.com/mongo-express/mongo-express</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="&#xE01;&#xE32;&#xE23;&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07;-">&#xE01;&#xE32;&#xE23;&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07; <img src="../assets/images/mongodb-logo.png" alt="MongoDB"></h2>
+<h3 id="&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07;&#xE14;&#xE49;&#xE27;&#xE22;&#xE27;&#xE34;&#xE18;&#xE35;&#xE1B;&#xE01;&#xE15;&#xE34;&#xE02;&#xE2D;&#xE07;&#xE23;&#xE30;&#xE1A;&#xE1A;&#xE1B;&#xE0F;&#xE34;&#xE1A;&#xE31;&#xE15;&#xE34;&#xE01;&#xE32;&#xE23;">&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07;&#xE14;&#xE49;&#xE27;&#xE22;&#xE27;&#xE34;&#xE18;&#xE35;&#xE1B;&#xE01;&#xE15;&#xE34;&#xE02;&#xE2D;&#xE07;&#xE23;&#xE30;&#xE1A;&#xE1A;&#xE1B;&#xE0F;&#xE34;&#xE1A;&#xE31;&#xE15;&#xE34;&#xE01;&#xE32;&#xE23;</h3>
+<h4 id="ubuntu">Ubuntu</h4>
+<ul>
+<li>&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21; server &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07;</li>
+</ul>
+<pre><code class="lang-sh"><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse&quot;</span> | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+</code></pre>
+<ul>
+<li>&#xE2A;&#xE31;&#xE48;&#xE07; update &#xE41;&#xE25;&#xE30;&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07;</li>
+</ul>
+<pre><code class="lang-sh">sudo apt update
+sudo apt install -y mongodb-org
+</code></pre>
+<h4 id="windows">Windows</h4>
+<ul>
+<li><p>Download: <a href="https://www.mongodb.com/download-center/community?jmp=docs" target="_blank">https://www.mongodb.com/download-center/community?jmp=docs</a></p>
+</li>
+<li><p>&#xE04;&#xE39;&#xE48;&#xE21;&#xE37;&#xE2D;&#xE01;&#xE32;&#xE23;&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07;: <a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/" target="_blank">https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/</a></p>
+</li>
+</ul>
+<h4 id="macos">MacOS</h4>
+<ul>
+<li><p>Download: <a href="https://www.mongodb.com/download-center/community?jmp=docs" target="_blank">https://www.mongodb.com/download-center/community?jmp=docs</a></p>
+</li>
+<li><p>&#xE04;&#xE39;&#xE48;&#xE21;&#xE37;&#xE2D;&#xE01;&#xE32;&#xE23;&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07;: <a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/" target="_blank">https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/</a></p>
+</li>
+</ul>
+<h3 id="&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07;&#xE14;&#xE49;&#xE27;&#xE22;-docker-compose">&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07;&#xE14;&#xE49;&#xE27;&#xE22; <code>docker-compose</code></h3>
+<ul>
+<li>&#xE40;&#xE02;&#xE35;&#xE22;&#xE19;&#xE44;&#xE1F;&#xE25;&#xE4C; <code>docker-compose.yml</code></li>
+</ul>
+<pre><code class="lang-yml"><span class="hljs-attr">version:</span> <span class="hljs-string">&apos;3.1&apos;</span>
+
+<span class="hljs-attr">services:</span>
+
+<span class="hljs-attr">  mongo:</span>
+<span class="hljs-attr">    image:</span> <span class="hljs-string">&apos;mongo&apos;</span>
+<span class="hljs-attr">    restart:</span> always
+<span class="hljs-attr">    environment:</span>
+<span class="hljs-attr">      MONGO_INITDB_ROOT_USERNAME:</span> admin
+<span class="hljs-attr">      MONGO_INITDB_ROOT_PASSWORD:</span> cs@ubu
+
+<span class="hljs-attr">  mongo-express:</span>
+<span class="hljs-attr">    image:</span> mongo-express
+<span class="hljs-attr">    restart:</span> always
+<span class="hljs-attr">    ports:</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-number">8081</span>:<span class="hljs-number">8081</span>
+<span class="hljs-attr">    environment:</span>
+<span class="hljs-attr">      ME_CONFIG_MONGODB_ADMINUSERNAME:</span> admin
+<span class="hljs-attr">      ME_CONFIG_MONGODB_ADMINPASSWORD:</span> cs@ubu
+</code></pre>
+<ul>
+<li>&#xE40;&#xE1B;&#xE34;&#xE14; <code>cmd.exe</code> &#xE17;&#xE35;&#xE48;&#xE15;&#xE33;&#xE41;&#xE2B;&#xE19;&#xE48;&#xE07;&#xE40;&#xE14;&#xE35;&#xE22;&#xE27;&#xE01;&#xE31;&#xE1A;&#xE44;&#xE1F;&#xE25;&#xE4C; <code>docker-compose.yml</code> &#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;</li>
+</ul>
+<pre><code class="lang-sh">docker-compose up
+</code></pre>
+<ul>
+<li>&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;&#xE19;&#xE35;&#xE49;&#xE08;&#xE30;&#xE40;&#xE1B;&#xE34;&#xE14; mongo server &#xE17;&#xE35;&#xE48; port 27017 &#xE41;&#xE25;&#xE30; mongo-express &#xE17;&#xE35;&#xE48; </li>
+</ul>
+<p><a href="http://localhost:8081" target="_blank">http://localhost:8081</a></p>
 
                                 
                                 </section>
@@ -284,12 +380,12 @@
 
             
                 
-                <a href="../week03/" class="navigation navigation-prev " aria-label="Previous page: หัวข้อสัปดาห์ที่ 3">
+                <a href="../week03/" class="navigation navigation-prev " aria-label="Previous page: หัวข้อสัปดาห์ที่ ...">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../mongo02/" class="navigation navigation-next " aria-label="Next page: MongoDB 02">
+                <a href="../mongo02/" class="navigation navigation-next " aria-label="Next page: โครงสร้างข้อมูลและการจัดการ">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -300,7 +396,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MongoDB 01","level":"1.5","depth":1,"next":{"title":"MongoDB 02","level":"1.6","depth":1,"path":"mongo02/README.md","ref":"mongo02/README.md","articles":[]},"previous":{"title":"หัวข้อสัปดาห์ที่ 3","level":"1.4","depth":1,"path":"week03/README.md","ref":"week03/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"favicon":{"shortcut":"assets/images/fav.ico","bookmark":"assets/images/fav.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"comsciubu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Database System","language":"th","gitbook":">=3.0.0"},"file":{"path":"mongo01/README.md","mtime":"2019-06-14T10:20:42.673Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-14T10:40:15.454Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ความรู้เบื้องต้น NoSQL","level":"1.5","depth":1,"next":{"title":"โครงสร้างข้อมูลและการจัดการ","level":"1.6","depth":1,"path":"mongo02/README.md","ref":"mongo02/README.md","articles":[]},"previous":{"title":"หัวข้อสัปดาห์ที่ ...","level":"1.4","depth":1,"path":"week03/README.md","ref":"week03/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"favicon":{"shortcut":"assets/images/fav.ico","bookmark":"assets/images/fav.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"comsciubu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Database System","language":"th","gitbook":">=3.0.0"},"file":{"path":"mongo01/README.md","mtime":"2019-06-17T07:20:44.112Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-17T07:01:33.650Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

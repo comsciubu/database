@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>MongoDB 03 · Database System</title>
+        <title>การจัดการข้อมูลขั้นสูง · Database System</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -151,7 +151,7 @@
                 <a href="../week03/">
             
                     
-                    หัวข้อสัปดาห์ที่ 3
+                    หัวข้อสัปดาห์ที่ ...
             
                 </a>
             
@@ -164,7 +164,7 @@
                 <a href="../mongo01/">
             
                     
-                    MongoDB 01
+                    ความรู้เบื้องต้น NoSQL
             
                 </a>
             
@@ -177,7 +177,7 @@
                 <a href="../mongo02/">
             
                     
-                    MongoDB 02
+                    โครงสร้างข้อมูลและการจัดการ
             
                 </a>
             
@@ -190,7 +190,7 @@
                 <a href="./">
             
                     
-                    MongoDB 03
+                    การจัดการข้อมูลขั้นสูง
             
                 </a>
             
@@ -203,7 +203,7 @@
                 <a href="../mongo04/">
             
                     
-                    MongoDB 04
+                    การพัฒนาซอฟต์แวร์โดยใช้ NoSQL
             
                 </a>
             
@@ -241,7 +241,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >MongoDB 03</a>
+        <a href=".." >การจัดการข้อมูลขั้นสูง</a>
     </h1>
 </div>
 
@@ -256,7 +256,28 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="mongodb-01">MongoDB 01</h1>
+                                <h1 id="&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;&#xE02;&#xE31;&#xE49;&#xE19;&#xE2A;&#xE39;&#xE07;">&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;&#xE02;&#xE31;&#xE49;&#xE19;&#xE2A;&#xE39;&#xE07;</h1>
+<blockquote>
+<p>Aggregation, Transactions and Indexes</p>
+</blockquote>
+<h2 id="&#xE08;&#xE38;&#xE14;&#xE1B;&#xE23;&#xE30;&#xE2A;&#xE07;&#xE04;&#xE4C;&#xE23;&#xE32;&#xE22;&#xE2A;&#xE31;&#xE1B;&#xE14;&#xE32;&#xE2B;&#xE4C;">&#xE08;&#xE38;&#xE14;&#xE1B;&#xE23;&#xE30;&#xE2A;&#xE07;&#xE04;&#xE4C;&#xE23;&#xE32;&#xE22;&#xE2A;&#xE31;&#xE1B;&#xE14;&#xE32;&#xE2B;&#xE4C;</h2>
+<ol>
+<li><p>&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE2D;&#xE18;&#xE34;&#xE1A;&#xE32;&#xE22;&#xE41;&#xE19;&#xE27;&#xE04;&#xE34;&#xE14;&#xE41;&#xE25;&#xE30;&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;&#xE43;&#xE19;&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49; pipeline &#xE44;&#xE14;&#xE49;</p>
+</li>
+<li><p>&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE2D;&#xE18;&#xE34;&#xE1A;&#xE32;&#xE22;&#xE41;&#xE19;&#xE27;&#xE04;&#xE34;&#xE14;&#xE41;&#xE25;&#xE30;&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; CRUD &#xE43;&#xE19;&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;&#xE08;&#xE32;&#xE01;&#xE2B;&#xE25;&#xE32;&#xE22; collection &#xE44;&#xE14;&#xE49;</p>
+</li>
+<li><p>&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE2D;&#xE18;&#xE34;&#xE1A;&#xE32;&#xE22;&#xE41;&#xE19;&#xE27;&#xE04;&#xE34;&#xE14;&#xE41;&#xE25;&#xE30;&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; Index &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21;&#xE1B;&#xE23;&#xE30;&#xE2A;&#xE34;&#xE17;&#xE18;&#xE34;&#xE20;&#xE32;&#xE1E;&#xE43;&#xE19;&#xE01;&#xE32;&#xE23;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19;&#xE44;&#xE14;&#xE49;</p>
+</li>
+</ol>
+<p><strong>&#xE2D;&#xE49;&#xE32;&#xE07;&#xE2D;&#xE34;&#xE07;</strong></p>
+<ul>
+<li><p><a href="https://docs.mongodb.com/manual/aggregation/" target="_blank">https://docs.mongodb.com/manual/aggregation/</a></p>
+</li>
+<li><p><a href="https://docs.mongodb.com/manual/core/transactions/" target="_blank">https://docs.mongodb.com/manual/core/transactions/</a> </p>
+</li>
+<li><p><a href="https://docs.mongodb.com/manual/indexes/" target="_blank">https://docs.mongodb.com/manual/indexes/</a></p>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -284,12 +305,12 @@
 
             
                 
-                <a href="../mongo02/" class="navigation navigation-prev " aria-label="Previous page: MongoDB 02">
+                <a href="../mongo02/" class="navigation navigation-prev " aria-label="Previous page: โครงสร้างข้อมูลและการจัดการ">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../mongo04/" class="navigation navigation-next " aria-label="Next page: MongoDB 04">
+                <a href="../mongo04/" class="navigation navigation-next " aria-label="Next page: การพัฒนาซอฟต์แวร์โดยใช้ NoSQL">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -300,7 +321,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MongoDB 03","level":"1.7","depth":1,"next":{"title":"MongoDB 04","level":"1.8","depth":1,"path":"mongo04/README.md","ref":"mongo04/README.md","articles":[]},"previous":{"title":"MongoDB 02","level":"1.6","depth":1,"path":"mongo02/README.md","ref":"mongo02/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"favicon":{"shortcut":"assets/images/fav.ico","bookmark":"assets/images/fav.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"comsciubu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Database System","language":"th","gitbook":">=3.0.0"},"file":{"path":"mongo03/README.md","mtime":"2019-06-14T10:21:26.805Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-14T10:40:15.454Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"การจัดการข้อมูลขั้นสูง","level":"1.7","depth":1,"next":{"title":"การพัฒนาซอฟต์แวร์โดยใช้ NoSQL","level":"1.8","depth":1,"path":"mongo04/README.md","ref":"mongo04/README.md","articles":[]},"previous":{"title":"โครงสร้างข้อมูลและการจัดการ","level":"1.6","depth":1,"path":"mongo02/README.md","ref":"mongo02/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"favicon":{"shortcut":"assets/images/fav.ico","bookmark":"assets/images/fav.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"comsciubu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Database System","language":"th","gitbook":">=3.0.0"},"file":{"path":"mongo03/README.md","mtime":"2019-06-16T11:48:42.643Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-17T07:01:33.650Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
